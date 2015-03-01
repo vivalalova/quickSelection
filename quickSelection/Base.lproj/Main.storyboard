@@ -1,25 +1,154 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baS-7k-wBU" customClass="LOCircleProgressView">
+                                <rect key="frame" x="64" y="48" width="200" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="LCa-yV-e36">
+                                        <rect key="frame" x="30" y="30" width="140" height="140"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzr-vL-DGF">
+                                        <rect key="frame" x="48" y="77" width="105" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8u-Uk-5bC">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="viewPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mQp-bv-atD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="KXy-Ka-p9C"/>
+                                    <constraint firstAttribute="height" constant="200" id="idF-Uy-LT5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.65490196078431373" green="0.82352941176470584" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.94999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="reverse" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bgWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZl-q6-ysR">
+                                <rect key="frame" x="34" y="302" width="260" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jTS-ay-uAX"/>
+                                    <constraint firstAttribute="width" constant="260" id="tew-Ri-s0I"/>
+                                </constraints>
+                                <state key="normal" title="   O or X   ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="O_or_X_BtnPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="94Y-qd-HoI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yko-Um-U1v">
+                                <rect key="frame" x="34" y="332" width="260" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yds-M0-5NM"/>
+                                    <constraint firstAttribute="width" constant="260" id="pXq-oS-zFq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="   Numebrs   "/>
+                                <connections>
+                                    <action selector="numbersBtnPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qf1-Oc-06x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VU-fb-md9">
+                                <rect key="frame" x="34" y="449" width="260" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="dvT-Ia-7cq"/>
+                                    <constraint firstAttribute="height" constant="30" id="roP-l8-hvQ"/>
+                                </constraints>
+                                <state key="normal" title="   Quick Select   ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="quickSelectionBtnPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HFH-ft-sUn"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="ovc-cK-11n">
+                                <rect key="frame" x="32" y="378" width="264" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="J1l-yf-4mJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="gjb-3F-RUV"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderSlided:" destination="vXZ-lx-hvc" eventType="valueChanged" id="PUR-vg-Mbw"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yko-Um-U1v" firstAttribute="top" secondItem="CZl-q6-ysR" secondAttribute="bottom" id="C4p-l3-bzO"/>
+                            <constraint firstAttribute="centerX" secondItem="4VU-fb-md9" secondAttribute="centerX" constant="-4" id="IQS-a6-WLA"/>
+                            <constraint firstAttribute="centerX" secondItem="CZl-q6-ysR" secondAttribute="centerX" constant="-4" id="OCi-gq-QR7"/>
+                            <constraint firstAttribute="centerX" secondItem="yko-Um-U1v" secondAttribute="centerX" constant="-4" id="adQ-3T-nLo"/>
+                            <constraint firstAttribute="centerX" secondItem="baS-7k-wBU" secondAttribute="centerX" constant="-4" id="gyR-ja-7mR"/>
+                            <constraint firstItem="4VU-fb-md9" firstAttribute="top" secondItem="ovc-cK-11n" secondAttribute="bottom" constant="41" id="jQ0-fW-tok"/>
+                            <constraint firstItem="ovc-cK-11n" firstAttribute="top" secondItem="yko-Um-U1v" secondAttribute="bottom" constant="16" id="k2X-qW-TWs"/>
+                            <constraint firstAttribute="centerX" secondItem="ovc-cK-11n" secondAttribute="centerX" constant="-4" id="kH0-1n-nR3"/>
+                            <constraint firstItem="baS-7k-wBU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="28" id="tpf-Fe-6D9"/>
+                            <constraint firstItem="CZl-q6-ysR" firstAttribute="top" secondItem="baS-7k-wBU" secondAttribute="bottom" constant="54" id="wck-Zt-ISN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="OXBtn" destination="CZl-q6-ysR" id="gya-5h-UQM"/>
+                        <outlet property="circle" destination="LCa-yV-e36" id="5at-Fi-Ocx"/>
+                        <outlet property="numberLabel" destination="vzr-vL-DGF" id="Tzl-q7-OzL"/>
+                        <outlet property="numbersBtn" destination="yko-Um-U1v" id="JPw-Wd-DCH"/>
+                        <outlet property="progress" destination="baS-7k-wBU" id="kKZ-Hf-YiZ"/>
+                        <outlet property="quickSelectionBtn" destination="4VU-fb-md9" id="ivT-aL-AlJ"/>
+                        <outlet property="rangeSlider" destination="ovc-cK-11n" id="BN6-3b-xD3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="250" y="195"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle" width="140" height="140"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
