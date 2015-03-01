@@ -1,24 +1,19 @@
 //
-//  ViewController.m
-//  quickSelection
+//  TodayViewController.m
+//  quick selection
 //
-//  Created by ShihKuo-Hsun on 2015/2/21.
+//  Created by ShihKuo-Hsun on 2015/3/1.
 //  Copyright (c) 2015年 LO. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TodayViewController.h"
+#import <NotificationCenter/NotificationCenter.h>
 #import "LOCircleProgressView.h"
 
-@interface ViewController () <LOCircleProgressViewDelegate> {
-	IBOutlet LOCircleProgressView *progress;
-	IBOutlet UIImageView *circle;
-	IBOutlet UILabel *numberLabel;
-
-	IBOutlet UIButton *OXBtn;
-	IBOutlet UIButton *numbersBtn;
-	IBOutlet UIButton *quickSelectionBtn;
-
-	IBOutlet UISlider *rangeSlider;
+@interface TodayViewController () <NCWidgetProviding>{
+    IBOutlet LOCircleProgressView *progress;
+    IBOutlet UIImageView *circle;
+    IBOutlet UILabel *numberLabel;
     
     int times;
     NSTimer *randomAnimateTimer;
@@ -26,35 +21,30 @@
 
 @end
 
-@implementation ViewController
+@implementation TodayViewController
 
 - (void)viewDidLoad {
-	[super viewDidLoad];
-    times = 0;
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+    progress.progressValue = 1;
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-	[super viewDidAppear:animated];
-
-	progress.delegate = self;
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self setPreferredContentSize:CGSizeMake(9999, 120)];
 }
 
-#pragma mark - ib action
-- (IBAction)pushMePressed:(UIButton *)sender {
-}
 
 - (IBAction)viewPressed:(UIButton *)sender {
-	CGRect frame = circle.frame;
+    
+    NSLog(@"view tapped");
+    
+    CGRect frame = circle.frame;
+    
+    CGFloat a = -5;
+    CGFloat b = 10;
+    CGFloat c = 3;
 
-	CGFloat a = -10;
-	CGFloat b = 20;
-	CGFloat c = 5;
-
-	if (quickSelectionBtn.selected) {
-        [self numberLabelChangeWithRandom];
-
-
-    }else{
         if (randomAnimateTimer == nil) {
             randomAnimateTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(numberLabelChangeWithRandom) userInfo:nil repeats:YES];
         }
@@ -82,48 +72,23 @@
                 }];
             }];
         }];
-    }
-}
-
-- (IBAction)sliderSlided:(UISlider *)sender {
-	numberLabel.text = [NSString stringWithFormat:@"%.0f", sender.value];
-}
-
-- (IBAction)O_or_X_BtnPressed:(UIButton *)sender {
-	sender.selected = YES;
-	numbersBtn.selected = NO;
-
-	[self numberLabelChangeWithRandom];
-}
-
-- (IBAction)numbersBtnPressed:(UIButton *)sender {
-	sender.selected = YES;
-	OXBtn.selected = NO;
-
-	[self sliderSlided:rangeSlider];
-}
-
-- (IBAction)quickSelectionBtnPressed:(UIButton *)sender {
-	sender.selected = !sender.selected;
-}
-
-#pragma mark - number changing
-
-/**
- *
- *
- *  @param number show  number or O X
- */
-- (void)numberLabelChangeWithRandom{
-	if (numbersBtn.selected) {
-        int uper = (int)rangeSlider.value;
-        numberLabel.text = [NSString stringWithFormat:@"%d",arc4random()%uper];
-	}
-	else {
-		numberLabel.text = arc4random() % 2 ? @"O" : @"X";
-	}
     
-    if (times < 36 && !quickSelectionBtn.selected) {
+}
+
+
+
+- (IBAction)goBtn:(UIButton *)sender {
+    NSLog(@"tapped!");
+    NSURL *customURL = [NSURL URLWithString:@"quickSelection://"];
+    [self.extensionContext openURL:customURL completionHandler:nil];
+}
+
+
+- (void)numberLabelChangeWithRandom{
+    
+        numberLabel.text = [NSString stringWithFormat:@"%d",arc4random()%42 +1];
+    
+    if (times < 36) {
         times++;
     }else{
         [randomAnimateTimer invalidate];
@@ -132,9 +97,46 @@
     }
 }
 
-#pragma mark - delegate
 
-- (void)LOCircleProgressViewDidEndAnimate {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
+    // Perform any setup necessary in order to update the view.
+    
+    // If an error is encountered, use NCUpdateResultFailed
+    // If there's no update required, use NCUpdateResultNoData
+    // If there's an update, use NCUpdateResultNewData
+
+    completionHandler(NCUpdateResultNewData);
 }
 
 @end

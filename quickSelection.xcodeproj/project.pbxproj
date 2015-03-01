@@ -8,37 +8,64 @@
 
 /* Begin PBXBuildFile section */
 		9CDD78EF777A6A4C778BA75C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054C229B6ED624F7FD9D06E2 /* libPods.a */; };
+		9E98FC2F1AA36DA1002A03E3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E98FBDF1AA35E91002A03E3 /* NotificationCenter.framework */; };
+		9E98FC351AA36DA1002A03E3 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E98FC341AA36DA1002A03E3 /* TodayViewController.m */; };
+		9E98FC371AA36DA1002A03E3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E98FC361AA36DA1002A03E3 /* MainInterface.storyboard */; };
+		9E98FC3A1AA36DA1002A03E3 /* quick selection.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E98FC2E1AA36DA1002A03E3 /* quick selection.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9E98FC401AA36DB9002A03E3 /* LOCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E98FC3F1AA36DB9002A03E3 /* LOCircleProgressView.m */; };
+		9E98FC421AA3700D002A03E3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E98FC411AA3700D002A03E3 /* Media.xcassets */; };
 		9EA145641A9A0FF8004634B6 /* LOUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA145591A9A0FF8004634B6 /* LOUIKit.m */; };
 		9EA145651A9A0FF8004634B6 /* LOView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1455B1A9A0FF8004634B6 /* LOView.m */; };
 		9EA145661A9A0FF8004634B6 /* LOButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1455D1A9A0FF8004634B6 /* LOButton.m */; };
 		9EA145671A9A0FF8004634B6 /* LOTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1455F1A9A0FF8004634B6 /* LOTextfield.m */; };
 		9EA145681A9A0FF8004634B6 /* LOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA145611A9A0FF8004634B6 /* LOImageView.m */; };
 		9EA145691A9A0FF8004634B6 /* LOLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA145631A9A0FF8004634B6 /* LOLabel.m */; };
-		9EA1456D1A9A10B4004634B6 /* LOCircleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1456C1A9A10B4004634B6 /* LOCircleLabel.m */; };
 		9EAAD9BB1A98CCE100D6DB3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAD9BA1A98CCE100D6DB3A /* main.m */; };
 		9EAAD9BE1A98CCE100D6DB3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAD9BD1A98CCE100D6DB3A /* AppDelegate.m */; };
 		9EAAD9C11A98CCE100D6DB3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAD9C01A98CCE100D6DB3A /* ViewController.m */; };
 		9EAAD9C41A98CCE100D6DB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAAD9C21A98CCE100D6DB3A /* Main.storyboard */; };
 		9EAAD9C61A98CCE100D6DB3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EAAD9C51A98CCE100D6DB3A /* Images.xcassets */; };
 		9EAAD9C91A98CCE100D6DB3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EAAD9C71A98CCE100D6DB3A /* LaunchScreen.xib */; };
-		9EAAD9D51A98CCE100D6DB3A /* quickSelectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAD9D41A98CCE100D6DB3A /* quickSelectionTests.m */; };
 		9EAAD9E31A98D7FA00D6DB3A /* LOCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAD9E21A98D7FA00D6DB3A /* LOCircleProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9EAAD9CF1A98CCE100D6DB3A /* PBXContainerItemProxy */ = {
+		9E98FC381AA36DA1002A03E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9EAAD9AD1A98CCE100D6DB3A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9EAAD9B41A98CCE100D6DB3A;
-			remoteInfo = quickSelection;
+			remoteGlobalIDString = 9E98FC2D1AA36DA1002A03E3;
+			remoteInfo = "quick selection";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E98FBEF1AA35E91002A03E3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9E98FC3A1AA36DA1002A03E3 /* quick selection.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		054C229B6ED624F7FD9D06E2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C60040BE30A56C01C11EA37 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7FFDF1679719E2F60776F6E6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9E98FBDF1AA35E91002A03E3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		9E98FC2E1AA36DA1002A03E3 /* quick selection.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "quick selection.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E98FC321AA36DA1002A03E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E98FC331AA36DA1002A03E3 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		9E98FC341AA36DA1002A03E3 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		9E98FC361AA36DA1002A03E3 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		9E98FC3E1AA36DB9002A03E3 /* LOCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LOCircleProgressView.h; path = quickSelection/LOCircleProgressView.h; sourceTree = SOURCE_ROOT; };
+		9E98FC3F1AA36DB9002A03E3 /* LOCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LOCircleProgressView.m; path = quickSelection/LOCircleProgressView.m; sourceTree = SOURCE_ROOT; };
+		9E98FC411AA3700D002A03E3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		9EA145581A9A0FF8004634B6 /* LOUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOUIKit.h; sourceTree = "<group>"; };
 		9EA145591A9A0FF8004634B6 /* LOUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOUIKit.m; sourceTree = "<group>"; };
 		9EA1455A1A9A0FF8004634B6 /* LOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOView.h; sourceTree = "<group>"; };
@@ -51,8 +78,6 @@
 		9EA145611A9A0FF8004634B6 /* LOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOImageView.m; sourceTree = "<group>"; };
 		9EA145621A9A0FF8004634B6 /* LOLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLabel.h; sourceTree = "<group>"; };
 		9EA145631A9A0FF8004634B6 /* LOLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLabel.m; sourceTree = "<group>"; };
-		9EA1456B1A9A10B4004634B6 /* LOCircleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCircleLabel.h; sourceTree = "<group>"; };
-		9EA1456C1A9A10B4004634B6 /* LOCircleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCircleLabel.m; sourceTree = "<group>"; };
 		9EAAD9B51A98CCE100D6DB3A /* quickSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAAD9B91A98CCE100D6DB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EAAD9BA1A98CCE100D6DB3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,26 +88,24 @@
 		9EAAD9C31A98CCE100D6DB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EAAD9C51A98CCE100D6DB3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9EAAD9C81A98CCE100D6DB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9EAAD9CE1A98CCE100D6DB3A /* quickSelectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickSelectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EAAD9D31A98CCE100D6DB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EAAD9D41A98CCE100D6DB3A /* quickSelectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quickSelectionTests.m; sourceTree = "<group>"; };
-		9EAAD9E11A98D7FA00D6DB3A /* LOCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCircleProgressView.h; sourceTree = "<group>"; };
-		9EAAD9E21A98D7FA00D6DB3A /* LOCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCircleProgressView.m; sourceTree = "<group>"; };
+		9EAAD9E11A98D7FA00D6DB3A /* LOCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LOCircleProgressView.h; path = quickSelection/LOCircleProgressView.h; sourceTree = SOURCE_ROOT; };
+		9EAAD9E21A98D7FA00D6DB3A /* LOCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LOCircleProgressView.m; path = quickSelection/LOCircleProgressView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9E98FC2B1AA36DA1002A03E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E98FC2F1AA36DA1002A03E3 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EAAD9B21A98CCE100D6DB3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9CDD78EF777A6A4C778BA75C /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EAAD9CB1A98CCE100D6DB3A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +125,31 @@
 			isa = PBXGroup;
 			children = (
 				054C229B6ED624F7FD9D06E2 /* libPods.a */,
+				9E98FBDF1AA35E91002A03E3 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E98FC301AA36DA1002A03E3 /* quick selection */ = {
+			isa = PBXGroup;
+			children = (
+				9E98FC3E1AA36DB9002A03E3 /* LOCircleProgressView.h */,
+				9E98FC3F1AA36DB9002A03E3 /* LOCircleProgressView.m */,
+				9E98FC331AA36DA1002A03E3 /* TodayViewController.h */,
+				9E98FC341AA36DA1002A03E3 /* TodayViewController.m */,
+				9E98FC361AA36DA1002A03E3 /* MainInterface.storyboard */,
+				9E98FC311AA36DA1002A03E3 /* Supporting Files */,
+			);
+			path = "quick selection";
+			sourceTree = "<group>";
+		};
+		9E98FC311AA36DA1002A03E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E98FC321AA36DA1002A03E3 /* Info.plist */,
+				9E98FC411AA3700D002A03E3 /* Media.xcassets */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9EA145571A9A0FEE004634B6 /* lo */ = {
@@ -129,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				9EAAD9B71A98CCE100D6DB3A /* quickSelection */,
-				9EAAD9D11A98CCE100D6DB3A /* quickSelectionTests */,
+				9E98FC301AA36DA1002A03E3 /* quick selection */,
 				9EAAD9B61A98CCE100D6DB3A /* Products */,
 				537C5737748B5DA7AE3C1539 /* Pods */,
 				625F26621A195948ECB03D6C /* Frameworks */,
@@ -140,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				9EAAD9B51A98CCE100D6DB3A /* quickSelection.app */,
-				9EAAD9CE1A98CCE100D6DB3A /* quickSelectionTests.xctest */,
+				9E98FC2E1AA36DA1002A03E3 /* quick selection.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,8 +205,6 @@
 				9EAAD9B81A98CCE100D6DB3A /* Supporting Files */,
 				9EAAD9E11A98D7FA00D6DB3A /* LOCircleProgressView.h */,
 				9EAAD9E21A98D7FA00D6DB3A /* LOCircleProgressView.m */,
-				9EA1456B1A9A10B4004634B6 /* LOCircleLabel.h */,
-				9EA1456C1A9A10B4004634B6 /* LOCircleLabel.m */,
 			);
 			path = quickSelection;
 			sourceTree = "<group>";
@@ -174,26 +218,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9EAAD9D11A98CCE100D6DB3A /* quickSelectionTests */ = {
-			isa = PBXGroup;
-			children = (
-				9EAAD9D41A98CCE100D6DB3A /* quickSelectionTests.m */,
-				9EAAD9D21A98CCE100D6DB3A /* Supporting Files */,
-			);
-			path = quickSelectionTests;
-			sourceTree = "<group>";
-		};
-		9EAAD9D21A98CCE100D6DB3A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9EAAD9D31A98CCE100D6DB3A /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9E98FC2D1AA36DA1002A03E3 /* quick selection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E98FC3B1AA36DA1002A03E3 /* Build configuration list for PBXNativeTarget "quick selection" */;
+			buildPhases = (
+				9E98FC2A1AA36DA1002A03E3 /* Sources */,
+				9E98FC2B1AA36DA1002A03E3 /* Frameworks */,
+				9E98FC2C1AA36DA1002A03E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "quick selection";
+			productName = "quick selection";
+			productReference = 9E98FC2E1AA36DA1002A03E3 /* quick selection.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9EAAD9B41A98CCE100D6DB3A /* quickSelection */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EAAD9D81A98CCE100D6DB3A /* Build configuration list for PBXNativeTarget "quickSelection" */;
@@ -203,33 +247,17 @@
 				9EAAD9B21A98CCE100D6DB3A /* Frameworks */,
 				9EAAD9B31A98CCE100D6DB3A /* Resources */,
 				4EE3EB85D26C6744973F4328 /* Copy Pods Resources */,
+				9E98FBEF1AA35E91002A03E3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9E98FC391AA36DA1002A03E3 /* PBXTargetDependency */,
 			);
 			name = quickSelection;
 			productName = quickSelection;
 			productReference = 9EAAD9B51A98CCE100D6DB3A /* quickSelection.app */;
 			productType = "com.apple.product-type.application";
-		};
-		9EAAD9CD1A98CCE100D6DB3A /* quickSelectionTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9EAAD9DB1A98CCE100D6DB3A /* Build configuration list for PBXNativeTarget "quickSelectionTests" */;
-			buildPhases = (
-				9EAAD9CA1A98CCE100D6DB3A /* Sources */,
-				9EAAD9CB1A98CCE100D6DB3A /* Frameworks */,
-				9EAAD9CC1A98CCE100D6DB3A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9EAAD9D01A98CCE100D6DB3A /* PBXTargetDependency */,
-			);
-			name = quickSelectionTests;
-			productName = quickSelectionTests;
-			productReference = 9EAAD9CE1A98CCE100D6DB3A /* quickSelectionTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -240,12 +268,11 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = LO;
 				TargetAttributes = {
-					9EAAD9B41A98CCE100D6DB3A = {
+					9E98FC2D1AA36DA1002A03E3 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					9EAAD9CD1A98CCE100D6DB3A = {
+					9EAAD9B41A98CCE100D6DB3A = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 9EAAD9B41A98CCE100D6DB3A;
 					};
 				};
 			};
@@ -263,12 +290,21 @@
 			projectRoot = "";
 			targets = (
 				9EAAD9B41A98CCE100D6DB3A /* quickSelection */,
-				9EAAD9CD1A98CCE100D6DB3A /* quickSelectionTests */,
+				9E98FC2D1AA36DA1002A03E3 /* quick selection */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9E98FC2C1AA36DA1002A03E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E98FC421AA3700D002A03E3 /* Media.xcassets in Resources */,
+				9E98FC371AA36DA1002A03E3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EAAD9B31A98CCE100D6DB3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,13 +312,6 @@
 				9EAAD9C41A98CCE100D6DB3A /* Main.storyboard in Resources */,
 				9EAAD9C91A98CCE100D6DB3A /* LaunchScreen.xib in Resources */,
 				9EAAD9C61A98CCE100D6DB3A /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EAAD9CC1A98CCE100D6DB3A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,13 +351,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9E98FC2A1AA36DA1002A03E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E98FC401AA36DB9002A03E3 /* LOCircleProgressView.m in Sources */,
+				9E98FC351AA36DA1002A03E3 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EAAD9B11A98CCE100D6DB3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9EAAD9C11A98CCE100D6DB3A /* ViewController.m in Sources */,
 				9EA145681A9A0FF8004634B6 /* LOImageView.m in Sources */,
-				9EA1456D1A9A10B4004634B6 /* LOCircleLabel.m in Sources */,
 				9EAAD9BE1A98CCE100D6DB3A /* AppDelegate.m in Sources */,
 				9EA145641A9A0FF8004634B6 /* LOUIKit.m in Sources */,
 				9EAAD9E31A98D7FA00D6DB3A /* LOCircleProgressView.m in Sources */,
@@ -340,21 +377,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EAAD9CA1A98CCE100D6DB3A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9EAAD9D51A98CCE100D6DB3A /* quickSelectionTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9EAAD9D01A98CCE100D6DB3A /* PBXTargetDependency */ = {
+		9E98FC391AA36DA1002A03E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9EAAD9B41A98CCE100D6DB3A /* quickSelection */;
-			targetProxy = 9EAAD9CF1A98CCE100D6DB3A /* PBXContainerItemProxy */;
+			target = 9E98FC2D1AA36DA1002A03E3 /* quick selection */;
+			targetProxy = 9E98FC381AA36DA1002A03E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -378,6 +407,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9E98FC3C1AA36DA1002A03E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "quick selection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9E98FC3D1AA36DA1002A03E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "quick selection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		9EAAD9D61A98CCE100D6DB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -478,43 +531,17 @@
 			};
 			name = Release;
 		};
-		9EAAD9DC1A98CCE100D6DB3A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = quickSelectionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quickSelection.app/quickSelection";
-			};
-			name = Debug;
-		};
-		9EAAD9DD1A98CCE100D6DB3A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = quickSelectionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quickSelection.app/quickSelection";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9E98FC3B1AA36DA1002A03E3 /* Build configuration list for PBXNativeTarget "quick selection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E98FC3C1AA36DA1002A03E3 /* Debug */,
+				9E98FC3D1AA36DA1002A03E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9EAAD9B01A98CCE100D6DB3A /* Build configuration list for PBXProject "quickSelection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -529,15 +556,6 @@
 			buildConfigurations = (
 				9EAAD9D91A98CCE100D6DB3A /* Debug */,
 				9EAAD9DA1A98CCE100D6DB3A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9EAAD9DB1A98CCE100D6DB3A /* Build configuration list for PBXNativeTarget "quickSelectionTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9EAAD9DC1A98CCE100D6DB3A /* Debug */,
-				9EAAD9DD1A98CCE100D6DB3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
